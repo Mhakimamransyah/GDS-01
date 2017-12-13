@@ -1,0 +1,75 @@
+////SISTEM(CONTROLLER)/////----->on: getSistem();
+dao = new DaoSistem();
+sistem = new Sistem();
+sistem.setBanner(dao.getAllHeadBannerDB());
+sistem.setAdmin(dao.getAdminDB());
+return sistem;
+
+
+////PERUMAHAN(CONTROLLER)/////on : getPerumahan();
+dao = new PerumahanDao();
+
+dataPerumahan = dao.getPerumahanDB();
+Perumahan = [];
+while(dataPerumahan.hasNext()){
+  perumahan = new Perumahan();
+  perumahan.setId(dataPerumahan["Id"]);
+  perumahan.setAlamat(dataPerumahan["alamat"]);
+  perumahan.setNama(dataPerumahan["Nama"])
+  ..
+  ..
+  ..
+  ..
+  ..
+  perumahan.setFasilitas(dao.getFasilitasDB(dataPerumahan["Id"]));
+  perumahan.setSpesifikasi(dao.getSpesifikasiDB(dataPerumahan["Id"]));
+  perumahan.setHarga(dao.getHargaDB(dataPerumahan["Id"]));
+  Perumahan.add(perumahan);
+}
+return perumahan[];
+
+
+
+
+/////PERUMAHAN(MODEL)/////
+
+public function setId(Id_perumahan){
+   this->Id = Id_perumahan;
+   crumah = new CRumah(Id_perumahan);
+   this->rumah = crumah.getRumah();
+}
+
+
+
+
+
+**di dalam model perumahan ada controller rumah
+//////RUMAH(CONTROLLER)////// on:setId();--->getRumah();
+dao = new RumahDao();
+dataRumah = dao.getRumahDB(id_perumahan);
+
+Rumah = [];
+while(dataRumah.hasNext){
+   rumah = new Rumah();
+   rumah.setId(dataRumah["Id_rumah"]);
+   rumah.setHarga(dataRumah["Harga"]);
+   rumah.setLuas(dataRumah["Luas"]);
+   ..
+   ..
+   ..
+   ..
+   ..
+   ..
+   rumah.setBanner(dao.getRumahBanner(dataRumah["Id_rumah"]));
+   Rumah.add(rumah);
+}
+return Rumah[];
+
+
+//IMPLEMENTASI///
+perumahan[0].getRumah[0].getTipe()
+perumahan[3].getBanner;
+perumahan[3].getRumah[1].getBanner[0];
+
+sistem.getAdmin[0]["Facebook"]
+sistem.getBanner[0]["banner"];
