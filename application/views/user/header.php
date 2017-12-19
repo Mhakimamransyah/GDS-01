@@ -141,9 +141,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
 </div>
 <!--//-->	
-<div class=" banner-buying">
+<style type="text/css">
+	.divWithBgImage {
+	  width: 100%;
+	  height: 300px;
+	  background-position-y: center;
+	  background-image: url('<?= base_url()?>resource/images/posts/<?= $perumahan->banner; ?>');
+	  background-repeat: no-repeat;
+	  background-size: 100%; //propotional resize
+/*
+  background-size: 100% 100%; //stretch resize
+*/
+}
+</style>
+<div class=" banner-buying divWithBgImage">
 	<div class=" container">
-	<h3><span>Perumahan</span> X</h3>
+	<h3 style="color: cadetblue"><span><?= $perumahan->nama; ?></span></h3>
 	<!---->
 	<div class="clearfix"> </div>
 		<!--initiate accordion-->

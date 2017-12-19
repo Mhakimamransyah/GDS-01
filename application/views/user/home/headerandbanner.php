@@ -1,4 +1,4 @@
-<!-- BANNER HEADER -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
   </script>
 </head>
-<body >
+<body>
 <!--header-->
 	<div class="navigation">
 			<div class="container-fluid">
@@ -159,40 +159,83 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class=" banner">
 			 <div class="slider">
 			    <div class="callbacks_container">
-			      <ul class="rslides" id="slider">		       
+                   <style type="text/css">
+			      	.poster{
+							min-height: 550px;
+							background-size: cover;
+					}
+
+					.promowebsite{
+						 background: url('<?= base_url()?>/resource/images/posts/web.jpg') no-repeat;
+						background-size: cover;
+						-webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+					}
+
+					.promorrumah{
+                       background: url('<?= base_url()?>/resource/images/posts/main_banner.jpg') no-repeat;
+						background-size: cover;
+						-webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+					}
+
+					.promotanah{
+                       background: url('<?= base_url()?>/resource/images/posts/tanah.jpg') no-repeat;
+						background-size: cover;
+						-webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+					}
+
+					.banner{
+						background: url('<?= base_url()?>/resource/images/posts/de3.jpg') no-repeat;
+						background-size: cover;
+						-webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+					}
+
+			      </style>	       
+			      <ul class="rslides" id="slider">	
 					 <li>
-			          	 <div class="banner1">
-			           		<div class="caption">
-					          	<h3><span>Surya Alam</span></h3>
-					          	<p>Hunian Indah dan Mempesona</p>
+			          	 <div  class="poster promorrumah">
+			           		<div  class="caption">
+					          	<h3>Hunian <span>Nyaman</span> dan <span>Menyenangkan</span></h3>
+					          	<p>Dapatkan kenyamanan anda bersama kami</p>
 			          		</div>
 			          	</div>
 			         </li>
 					 <li>
-			          	 <div class="banner2">
+			          	 <div class="poster promowebsite">
 			           		<div class="caption">
-					          	<h3><span>Kelapa </span><span>Gading</span></h3>
-					          	<p>Hunian Nyaman dan Indah</p>
+					          	<h3>Bergabung Bersama <span style="color: green">Kami</span></h3>
+					          	<p>Dapatkan informasi bidang properti</p>
 			          		</div>
 			          	</div>
 			         </li>
 			         <li>
-			          	 <div class="banner3">
+			          	 <div class="poster promotanah">
+			           		<div class="caption">
+					          	<h3><span>Tanah</span></h3>
+					          	<p>Informasi mengenai jual beli tanah di Palembang</p>
+			          		</div>
+			          	</div>
+			         </li>
+                     
+                     <!-- Do random banner -->
+			         <!--   <li>
+			          	 <div class="poster">
 			           		<div class="caption">
 					          	<h3><span>Tanah</span> </h3>
 					          	<p>Luas dan Subur</p>
 			          		</div>
 			          	</div>
-			         </li>		
-			           <li>
-			          	 <div class="banner3">
-			           		<div class="caption">
-					          	<h3><span>Tanah</span> </h3>
-					          	<p>Luas dan Subur</p>
-			          		</div>
-			          	</div>
-			         </li>		
+			         </li> -->
+
 			      </ul>
+
 			  </div>
 			</div>
 		</div>
@@ -267,4 +310,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 	</div>
 	</div>
-<!-- BANNER HEADER -->

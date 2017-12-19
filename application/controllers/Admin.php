@@ -1,6 +1,8 @@
 <?php
 	class Admin extends CI_Controller{
+		
 		var $resource = "resource/user/";
+
 		public function login(){
 			$data['title'] = 'Sign In';
 

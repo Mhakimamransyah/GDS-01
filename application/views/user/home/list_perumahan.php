@@ -1,60 +1,63 @@
 <!-- LIST PERUMAHAN -->
+<!-- <?php var_dump($perumahan[0]); ?> -->
 <div class="content">
 	
 	<!-- PERUMAHAN CONTAINER -->
 	<div class="content-grid">
 		<h3>Perumahan</h3>
-		<div class="container">
-				<div class="col-md-4 box_2">
-			     	 <a href="<?= base_url();?>MainController/lihatPerumahan/1" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="<?= base_url($res); ?>images/pc4.jpg" alt="">
-			     	   	<span class="four">Lihat Surya Alam 1</span>
-			     	 </a>
-			     	   <div class="most-1">
-			     	   	 <h5><a href="single.html">Surya Alam 1</a></h5>
-			     	    	<p>Deksripsi singkat SA 1</p>
-			     	   </div>
-			 </div>
-			  <div class="col-md-4 box_2">
-		     	 <a href="<?= base_url();?>MainController/lihatPerumahan/2" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="<?= base_url($res); ?>images/pc5.jpg" alt="">
-			     	   	<span class="four">Lihat Surya Alam 2</span>
-			     	 </a>
-		     	   <div class="most-1">
-			     	   	<h5><a href="single.html">Surya Alam 2</a></h5>
-			     	    	<p>Deksripsi singkat SA 1</p>
-			     	   </div>
-		     	
-		      </div>
-			  <div class="col-md-4 box_2">
-		     	 <a href="<?= base_url();?>MainController/lihatPerumahan/3" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="<?= base_url($res); ?>images/pc3.jpg" alt="" >
-			     	   	<span class="four">Lihat Surya Alam 3</span>
-			     	 </a>
-		     	   <div class="most-1">
-			     	   	 <h5><a href="single.html">Surya Alam 3</a></h5>
-			     	    	<p>Deksripsi singkat SA 1</p>
-			     	   </div>
-		     	
-		      </div>
-		 	<div class="clearfix"> </div>
+			<?php 
+			    $iter = 0;
+                while($iter<sizeof($perumahan)){
+                   
+                   if($iter%3==0){ ?>
+                      <div class="container">
+	                      	<div class="col-md-4 box_2">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
+				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
+				     	       </a>
+				     	       <div class="most-1">
+				     	   	      <h5><a href="single.html"><?= $perumahan[$iter]->nama; ?></a></h5>
+				     	    	      <p></p>
+				     	       </div>
+				           </div>
+                   <?php
+                   }
+                   else if(($iter+1)%3==0){ ?> 
+                           <div class="col-md-4 box_2">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
+				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
+				     	       </a>
+				     	       <div class="most-1">
+				     	   	      <h5><a href="single.html"><?= $perumahan[$iter]->nama; ?></a></h5>
+				     	    	      <p></p>
+				     	       </div>
+				           </div>
+				       </div>
+				       <div class="clearfix"> </div>
+				       <br>
+
+                   <?php
+                   }
+                   else{?> 
+                          	<div class="col-md-4 box_2">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
+				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
+				     	       </a>
+				     	       <div class="most-1">
+				     	   	      <h5><a href="single.html"><?= $perumahan[$iter]->nama; ?></a></h5>
+				     	    	      <p> </p>
+				     	       </div>
+				           </div>
+
+                   <?php
+                   }
+                   $iter++;
+			} ?>
 		</div>	
 		<br>	
-			<div class="container">
-				<div class="col-md-4 box_2">
-			     	 <a href="<?= base_url();?>MainController/lihatPerumahan/4" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="<?= base_url($res); ?>images/pc4.jpg" alt="">
-			     	   	<span class="four">Lihat Alam Surya</span>
-			     	 </a>
-			     	   <div class="most-1">
-			     	   	 <h5><a href="single.html">Alam Surya</a></h5>
-			     	    	<p>Deksripsi singkat Alam Surya</p>
-			     	   </div>
-			 </div>
-			  
-			  
-		 	<div class="clearfix"> </div>
-		</div>		
 	</div>
 
 <!-- LIST PERUMAHAN -->
