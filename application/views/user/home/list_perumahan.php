@@ -12,7 +12,7 @@
                    if($iter%3==0){ ?>
                       <div class="container">
 	                      	<div class="col-md-4 box_2">
-				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>main/perumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
 				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
 				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
 				     	       </a>
@@ -25,7 +25,7 @@
                    }
                    else if(($iter+1)%3==0){ ?> 
                            <div class="col-md-4 box_2">
-				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>main/perumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
 				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
 				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
 				     	       </a>
@@ -42,7 +42,7 @@
                    }
                    else{?> 
                           	<div class="col-md-4 box_2">
-				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>MainController/lihatPerumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
+				     	       <a  id="<?= $iter; ?>" value="<?php $data; ?>" href="<?= base_url();?>main/perumahan/<?= $perumahan[$iter]->id; ?>" class="mask">
 				     	   	   <img style="width: 350px; height: 237px;" class="img-responsive zoom-img" src="<?= base_url();?>resource/images/posts/<?= $perumahan[$iter]->banner?>" alt="">
 				     	   	   <span class="four">Lihat <?= $perumahan[$iter]->nama; ?></span>
 				     	       </a>

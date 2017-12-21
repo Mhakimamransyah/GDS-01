@@ -1,208 +1,41 @@
 <div class="dealers">
 <div class="container">
-	<h3>Seluruh Tanah</h3>
+	<h3>Seluruh Kawasan Tanah</h3>
 	<div class="dealer-top">
-			<div class="deal-top-top">
+        <?php 
+             $j = 0;
+             $i = 1;
+             while($i<=ceil(sizeof($tanah)/4)){
+             	echo '<div class="deal-top-top">';
+             	 do{
+             	 	if($j != sizeof($tanah)){
+        ?>
 				<div class="col-md-3 top-deal-top">
 					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de.jpg" class="img-responsive zoom-img" alt=""></a>
+						<a href="<?= base_url()?>main/tanah/<?=$tanah[$j]->id?>" class="mask"><img src="<?= base_url(); ?>resource/images/posts/<?= $tanah[$j]->banner; ?>" class="img-responsive zoom-img"  style="width: 300px;height: 200px;" alt=""></a>
 						<div class="deal-bottom">
 							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
+								<h5><a href="<?= base_url()?>main/tanah/<?=$tanah[$j]->id?>"><?= $tanah[$j]->kawasan; ?></a></h5>
+								<p>Palembang</p>
 							</div>
 							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
+								<a href="<?= base_url()?>main/tanah/<?=$tanah[$j]->id?>" class="hvr-sweep-to-right more">More</a>
 							</div>
 						<div class="clearfix"> </div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de1.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de2.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top ">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de3.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-			<div class="clearfix"> </div>
-		</div>		
-		<div class="deal-top-top">
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de4.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de5.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de6.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de7.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-			<div class="clearfix"> </div>
-		</div>		
-		<div class="deal-top-top">
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de8.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de9.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de10.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top-deal-top">
-					<div class=" top-deal">
-						<a href="single.html" class="mask"><img src="<?= base_url($res); ?>images/de11.jpg" class="img-responsive zoom-img" alt=""></a>
-						<div class="deal-bottom">
-							<div class="top-deal1">
-								<h5><a href="single.html"> ut perspiciatis</a></h5>
-								<p>Plot Area : 150 Sq.Yrds</p>
-								<p>Price: $250000</p>
-							</div>
-							<div class="top-deal2">
-								<a href="single.html" class="hvr-sweep-to-right more">More</a>
-							</div>
-						<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-			<div class="clearfix"> </div>
-		</div>		
+
+		<?php     }else{ break; }
+		            $j++;
+		       }while($j%4!=0);
+               $i++;
+               echo '<div class="clearfix"> </div>';
+               echo '</div>';
+             }
+		?>	
+
+
 	</div>
 </div>
 </div>

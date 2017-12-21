@@ -40,7 +40,7 @@
 				$this->load->view('templates/footer');
 			} else {
 				//Upload Image
-				$config['upload_path'] = 'C:/xampp/htdocs/gdsa/resource/images/posts/'; // PAKEK BASE URL ?
+				$config['upload_path'] = 'C:/xampp/htdocs/gds/resource/images/posts/'; // PAKEK BASE URL ?
 				$config['allowed_types'] = 'png|jpg';
 				$config['max_size'] = '0';
 				$config['max_width'] = '0';

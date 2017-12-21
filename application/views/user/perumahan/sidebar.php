@@ -30,8 +30,8 @@
 						<a href="single.html"><img class="img-responsive" src="<?= base_url($res); ?>images/sl.jpg" alt=""></a>
 					</div>
 					<div class="box-text">
-						<p><a href="<?= base_url(); ?>MainController/lihatPerumahan/<?= $data[$index]->id ?>"><?= $data[$index]->nama;  ?></a></p>
-						<a href="<?= base_url(); ?>MainController/lihatPerumahan/<?= $data[$index]->id ?>" class="in-box">More Info</a>
+						<p><a href="<?= base_url(); ?>main/perumahan/<?= $data[$index]->id ?>"><?= $data[$index]->nama;  ?></a></p>
+						<a href="<?= base_url(); ?>main/perumahan/<?= $data[$index]->id ?>" class="in-box">More Info</a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>

@@ -40,6 +40,9 @@ class Rumah{
             $result = $dr[$i];
          }
       }
+      if(empty($result)){
+           $result = "";
+      }
       return $result;
     }
 

@@ -23,3 +23,21 @@
 		</ul> -->
 	</div>
 </div>
+
+<div style="background:url('<?= base_url();?>resource/images/posts/search.jpg');background-position-x: 0px;
+    background-position-y: -92px;" class="content">
+			<div class="container">
+				<div class="mid-content" style="background: black;
+                    padding: 3em;
+                    width: 44%;
+                    margin: 0em auto 0;">
+					<h3>Spesifikasikan pencarian rumah...</h3>
+					<p>Gunakan kriteria pencarian rumah di <?= $perumahan->nama; ?> disini</p>
+					<a class=" more-in play-icon popup-with-zoom-anim" href="">Cari Rumah</a>
+				</div>
+			</div>
+		</div>
+
+
+
+

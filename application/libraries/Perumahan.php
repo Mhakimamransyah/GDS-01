@@ -40,6 +40,9 @@ class Perumahan{
               $result = $data_perumahan[$i];
            }
        }
+       if(empty($result)){
+           $result = "";
+       }
        return $result;
     }
 
