@@ -1,15 +1,16 @@
 <h2><?= $title; ?></h2>
 <br>
 <?php echo validation_errors(); ?>
-<?php echo form_open_multipart('categories/create'); ?>
+<?php echo form_open_multipart('categories/update/'.$category['id']); ?>
+<input type="hidden" name="id" value="<?php echo $category['id'];?>">
   	<div class="form-group">
   		<label>Name</label>
-  		<input type="text" class="form-control" name="name" placeholder="Enter Name">
+  		<input type="text" class="form-control" name="name" placeholder="Enter Name" value="<?php echo $category['name'];?>">
   	</div>
 
   	<div class="form-group">
-  		<label>Deskripsi Umum</label>
-  		<input type="text" class="form-control" name="desc" placeholder="Category Description">
+  		<label>General Description</label>
+  		<input type="text" class="form-control" name="desc" placeholder="Category Description" value="<?php echo $category['umum'];?>">
   	</div>
 
   	<div class="form-group">
